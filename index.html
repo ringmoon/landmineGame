@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>踩地雷遊戲</title>
+    <style>
+        body {
+            margin: 0% 0% 0% 0%;
+            text-align: center;
+        }
+
+        nav {
+            background: #00FFCC;
+            font-size: 48px;
+            text-align: center;
+        }
+
+        button {
+            width: 35px;
+            height: 35px;
+            margin: 0% 0% 0% 0%;
+        }
+
+        img {
+            width: 35px;
+            height: 35px;
+            margin: -18% 0% 0% -37%;
+        }
+
+        #landmineArea {
+            margin: 3% 20% 0% 20%;
+        }
+
+        span {
+            font-size: 36px;
+        }
+    </style>
+    <script src="js/function.js"></script>
+    <script src='js/jquery-3.2.1.min.js'></script>
+</head>
+
+<body>
+    <nav>踩地雷遊戲</nav><br/><br/>
+    <div style='text-align:center'>
+        <img src='img/landmine.jpg' style='margin:0 0 0 0'></img><span id='landmineNum' style='color:red'>99</span>
+        <img src='img/clock.png'></img><span id='time' >0</span>
+    </div>
+    <div>
+        <button onclick='changeMouse()' style='width:7%;font-size:24px' id='btn1'>換旗子</button>
+    </div>
+    <div id='landmineArea'>
+        <script>
+            init();
+        </script>
+    </div>
+
+</body>
+
+</html>
